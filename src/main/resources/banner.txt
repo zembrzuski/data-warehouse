@@ -1,0 +1,17 @@
+${Ansi.GREEN}                       _.---._
+${Ansi.GREEN}                     .' . .'  '.
+${Ansi.GREEN}                    /   .'. .'.'\
+${Ansi.GREEN}                   | `.'  .'.'  .|
+${Ansi.GREEN}                   |.' '.'.' `.' |
+${Ansi.GREEN}                    \ .'.`. .' `/
+${Ansi.GREEN}                     '.'  .`. .'
+${Ansi.GREEN}                       `;---;'
+${Ansi.GREEN}                        :   :
+${Ansi.GREEN}                        :   :
+${Ansi.GREEN}                        :  /|\
+${Ansi.GREEN}                       /|\ /|\
+${Ansi.GREEN}                       /|\ /|\
+${Ansi.GREEN}                       /|\ /|\
+${Ansi.GREEN}                       /|\  '
+${Ansi.GREEN}                       /|\
+${Ansi.GREEN}                        '
