@@ -1,5 +1,6 @@
 package com.zembruzski.rollingsnow.datawarehouse
 
+import com.zembruzski.rollingsnow.datawarehouse.domain.RawBalanco
 import com.zembruzski.rollingsnow.datawarehouse.service.ImportaBalanco
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.CommandLineRunner

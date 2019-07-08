@@ -1,12 +1,8 @@
 package com.zembruzski.rollingsnow.datawarehouse.domain
 
-import com.fasterxml.jackson.annotation.JsonProperty
-
 data class PlanoContas (
 
-        @JsonProperty("patrimonio_liquido")
-        val patrimonioLiquido: Conta,
+        val patrimonioLiquido: List<Conta>? = null,
+        val lucroLiquido: List<Conta>? = null
 
-        @JsonProperty("lucro_liquido")
-        val lucroLiquido: Conta
 )

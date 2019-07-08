@@ -1,5 +1,5 @@
 spring.output.ansi.enabled: ALWAYS
 
 spring.data.elasticsearch.repositories.enabled: true
-spring.data.elasticsearch.cluster-nodes: localhost:9300
-spring.data.elasticsearch.cluster-name: docker-cluster
+spring.data.elasticsearch.cluster-nodes: hlg-online-analytics-elastic01-poa.rbs.com.br:9300
+spring.data.elasticsearch.cluster-name: hlg-online-analytics
