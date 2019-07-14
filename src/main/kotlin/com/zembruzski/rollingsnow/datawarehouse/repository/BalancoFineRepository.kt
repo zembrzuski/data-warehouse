@@ -1,0 +1,6 @@
+package com.zembruzski.rollingsnow.datawarehouse.repository
+
+import com.zembruzski.rollingsnow.datawarehouse.domain.BalancoForExhibition
+import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+
+interface BalancoFineRepository : ElasticsearchRepository<BalancoForExhibition, String>

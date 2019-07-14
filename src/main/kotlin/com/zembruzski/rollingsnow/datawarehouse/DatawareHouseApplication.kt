@@ -1,7 +1,6 @@
 package com.zembruzski.rollingsnow.datawarehouse
 
-import com.zembruzski.rollingsnow.datawarehouse.domain.RawBalanco
-import com.zembruzski.rollingsnow.datawarehouse.service.ImportaBalanco
+import com.zembruzski.rollingsnow.datawarehouse.service.ImportaBalancoService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -13,12 +12,13 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 @SpringBootApplication
 @EnableElasticsearchRepositories("com.zembruzski.rollingsnow.datawarehouse.repository")
 class DatawareHouseApplication @Autowired constructor(
-        private val importaBalanco: ImportaBalanco
+        private val importaBalancoService: ImportaBalancoService
 ) {
 
     @Bean
     fun init() = CommandLineRunner {
-        importaBalanco.importaBalanco("009342")
+        val id = importaBalancoService.importaBalanco("009342")
+        println("generated " + id)
     }
 
 }
