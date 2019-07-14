@@ -4,6 +4,7 @@ data class Conta (
 
         val trimester: Int? = null,
         val year: Int? = null,
-        val value: Double? = null
+        val value: Double? = null,
+        val idDocumento: Int? = null
 
 )
