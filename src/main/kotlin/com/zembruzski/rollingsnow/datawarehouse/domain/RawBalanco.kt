@@ -6,7 +6,7 @@ import org.springframework.data.elasticsearch.annotations.Document
 import java.util.*
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@Document(indexName = "teste", type = "teste")
+@Document(indexName = "zembrzuski", type = "raw_balances")
 data class RawBalanco(
 
         @Id

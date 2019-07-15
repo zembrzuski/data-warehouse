@@ -7,4 +7,6 @@ interface BalancoRawRepository : ElasticsearchRepository<RawBalanco, String> {
 
     fun findByNomeEmpresa(nomeEmpresa: String): MutableIterable<RawBalanco>
 
+    fun findByCodigoCvm(codigoCvm: String): MutableIterable<RawBalanco>
+
 }

@@ -3,6 +3,7 @@ package com.zembruzski.rollingsnow.datawarehouse.service
 import com.zembruzski.rollingsnow.datawarehouse.domain.BalancoForExhibition
 import com.zembruzski.rollingsnow.datawarehouse.repository.BalancoFineRepository
 import com.zembruzski.rollingsnow.datawarehouse.repository.BalancoRawRepository
+import com.zembruzski.rollingsnow.datawarehouse.service.helpers.IndicadorExtractor
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 
