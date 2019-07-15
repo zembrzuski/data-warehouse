@@ -16,6 +16,10 @@ class ConsolidadorBalancoService @Autowired constructor(
     fun consolidaBalanco(codigoCvm: String) {
         val allBalancesFromCompany: MutableIterable<RawBalanco> = balancoRawRepository.findByCodigoCvm(codigoCvm)
 
+        allBalancesFromCompany.map { b ->
+            b.copy(planoContas = null)
+        }
+
         val patrimonioLiquido = balancoExtractor.extractBalanco(allBalancesFromCompany, "PATRIMONIO_LIQUIDO")
 
         BalancoConsolidado(
